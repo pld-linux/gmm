@@ -10,9 +10,6 @@ Source0:	http://download.gna.org/getfem/stable/%{name}-%{version}.tar.gz
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
-# to fool configure script
-%define		_target_platform	%{_host_cpu}-%{_target_vendor}-%{_target_os}%{?_gnu}
-
 # nothing to put there
 %define		_enable_debug_packages	0
 
