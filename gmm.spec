@@ -14,9 +14,9 @@ Version:	4.3
 Release:	2
 License:	LGPL v2+
 Group:		Development/Libraries
-URL:		http://home.gna.org/getfem/gmm_intro
 Source0:	http://download.gna.org/getfem/stable/%{name}-%{version}.tar.gz
 # Source0-md5:	f64441d4f85c6a37b8ae1cc70649b795
+URL:		http://home.gna.org/getfem/gmm_intro
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -38,7 +38,6 @@ A generic C++ template library for sparse, dense and skyline matrices.
 
 %install
 rm -rf $RPM_BUILD_ROOT
-
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
