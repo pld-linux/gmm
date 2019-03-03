@@ -11,7 +11,7 @@
 Summary:	A generic C++ template library for sparse, dense and skyline matrices
 Name:		gmm
 Version:	4.3
-Release:	2
+Release:	3
 License:	LGPL v2+
 Group:		Development/Libraries
 Source0:	http://download.gna.org/getfem/stable/%{name}-%{version}.tar.gz
