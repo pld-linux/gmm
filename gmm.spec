@@ -1,13 +1,3 @@
-# to fool configure script
-%if %{_host_cpu} != x32
-%define		_target_platform	%{_host_cpu}-%{_target_vendor}-%{_target_os}%{?_gnu}
-%else
-%define		_target_platform	x86_64-%{_target_vendor}-%{_target_os}%{?_gnu}
-%endif
-
-# nothing to put there
-%define		_enable_debug_packages	0
-
 Summary:	A generic C++ template library for sparse, dense and skyline matrices
 Name:		gmm
 Version:	4.3
